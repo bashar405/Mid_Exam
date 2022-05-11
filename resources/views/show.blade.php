@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -74,18 +73,18 @@
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        #NSODFC7BMU - Ticket 1
+                        {{ $tickets->title }}
                     </div>
 
                     <div class="panel-body">
 
                         <div class="ticket-info">
-                            <p>Ticket no. 1</p>
-                            <p>Categry: Technical</p>
+                            <p>Ticket no. {{ $tickets->id }}</p>
+                            <p>Categry: {{ $tickets->category }}</p>
                             <p>
-                                Status: <span class="label label-success">Open</span>
+                                Status: <span class="label label-success">{{ $tickets->priority }}</span>
                             </p>
-                            <p>Created on: 2 weeks ago</p>
+                            <p>Created on: {{ $tickets->created_on }}</p>
                         </div>
 
                         <hr>
